@@ -35,9 +35,7 @@ BASE_URL = "https://team-project-part-node.onrender.com"
 
 Запрос get("/api/user/current") токен
 
-Возращается ............................
-
-Возращается код 200 и информация текущего пользователя, которая необходима для заполения всех значений.
+Возращается большой объект с ключами:user, recommendedCalories, caloriesToday, recommendedWater, waterToday, recommendedFood, breakfast, lunch, dinner, snack Это всё кидаем в редакс состояние и наполняем HomePage
 
                                                                                             avatar----PATCH
 
@@ -98,7 +96,7 @@ meals(string), title(string), calories(number), carbohydrates(number), protein(n
 
 Запрос get("/api/user/statistics") токен и {"month": "название месяца"}
 
-Возращается объект с масивами для воды, веса и калорий за выбранный месяц
+Возращается объект с масивами для воды, веса и калорий по каждому дню за выбранный месяц
 
                                                                                            recommended-food ----GET
 
