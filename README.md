@@ -68,11 +68,11 @@ BASE_URL = "https://team-project-part-node.onrender.com"
 Запрос post("/api/user/food-intake") токен и ОБЯЗАТЕЛЬНО МАССИВ С ОБЪЕКТОМ ИЛИ ОБЪЕКТАМИ взависимости от того, сколько продуктов пользователь добавил за один раз. В каждом объекте обязательные поля:
 meals(string), title(string), calories(number), carbohydrates(number), protein(number), fat(number)
 
-Возращается код 201 и объект с массивами, которые вы добавили
+Возращается код 201 и объект с обновленными массивами для каждого приему пищи
 
                                                                                             food-intake ----PUT
 
-Запрос put("/api/user/food-intake").............................
+Запрос put("/api/user/food-intake/:id").............................
 
 Возращается код 201........................
 
@@ -96,9 +96,9 @@ meals(string), title(string), calories(number), carbohydrates(number), protein(n
 
                                                                                            statistics ----GET
 
-Запрос get("/api/user/statistics") токен .............
+Запрос get("/api/user/statistics") токен и {"month": "название месяца"}
 
-Возращается...........................
+Возращается объект с масивами для воды, веса и калорий за выбранный месяц
 
                                                                                            recommended-food ----GET
 
