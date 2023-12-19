@@ -68,7 +68,7 @@ meals(string), title(string), calories(number), carbohydrates(number), protein(n
 
 Возращается код 201 и объект с обновленными массивами для каждого приему пищи
 
-                                                                                            food-intake ----PUT
+                                                                                            food-intake by ID ----PUT
 
 Запрос put("/api/user/food-intake/:id") токен и все поля обязательны пример:{
 "meals": "dinner",
@@ -80,6 +80,12 @@ meals(string), title(string), calories(number), carbohydrates(number), protein(n
 }
 
 Возращается код 200 и новый обновленный объект с новым id
+
+                                                                                            food-intake by ID ----DELETE
+
+Запрос put("/api/user/food-intake/:id") токен и все полe {"meals": "dinner(например)"}
+
+Возращается код 200 и сообхение "Success"
 
                                                                                             food-intake ----DELETE
 
