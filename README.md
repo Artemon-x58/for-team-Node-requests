@@ -45,9 +45,9 @@ BASE_URL = "https://team-project-part-node.onrender.com"
 
                                                                                             avatar----PATCH
 
-Запрос patch("/api/user/avatars") токен
+Запрос patch("/api/user/avatars") токен файл фотографии
 
-Возращается ............................
+Возращается с {avatarURL: link на фото на cloudinary} её нужно поставить в стейт вместо старой ссылки в стейте редакса
 
                                                                                             update----PUT
 
