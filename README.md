@@ -70,9 +70,16 @@ meals(string), title(string), calories(number), carbohydrates(number), protein(n
 
                                                                                             food-intake ----PUT
 
-Запрос put("/api/user/food-intake/:id").............................
+Запрос put("/api/user/food-intake/:id") токен и все поля обязательны пример:{
+"meals": "dinner",
+"title": "cola",
+"calories": 222,
+"carbohydrates": 14,
+"protein": 50,
+"fat": 10
+}
 
-Возращается код 201........................
+Возращается код 200 и новый обновленный объект с новым id
 
                                                                                             food-intake ----DELETE
 
