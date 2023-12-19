@@ -79,7 +79,7 @@ meals(string), title(string), calories(number), carbohydrates(number), protein(n
 "fat": 10
 }
 
-Возращается код 200 и новый обновленный объект с новым id
+Возращается код 200 и сообщение "Success"
 
                                                                                             food-intake by ID ----DELETE
 
