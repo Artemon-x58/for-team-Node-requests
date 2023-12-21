@@ -75,8 +75,29 @@ BASE_URL = "https://team-project-part-node.onrender.com"
 
                                                                                             food-intake ----POST
 
-Запрос post("/api/user/food-intake") токен и ОБЯЗАТЕЛЬНО МАССИВ С ОБЪЕКТОМ ИЛИ ОБЪЕКТАМИ взависимости от того, сколько продуктов пользователь добавил за один раз. В каждом объекте обязательные поля:
+Запрос post("/api/user/food-intake") токен и объект вотором два ключа. первый название приема пизи, второй это массив с объектами, каждый объект это продукт. Ниже пример
+
 meals(string), title(string), calories(number), carbohydrates(number), protein(number), fat(number)
+
+{
+"meals": "lunch",
+"entries": [
+{
+"title": "mango",
+"calories": 1000,
+"carbohydrates": 800,
+"protein": 150,
+"fat": 50
+},
+{
+"title": "beef",
+"calories": 1500,
+"carbohydrates": 800,
+"protein": 150,
+"fat": 50
+}
+]
+}
 
 Возращается код 201 и объект с обновленными массивами для приема пищи, который был прислан с фронтенда. А также возвращается объект где ссумируются все макроэлементы. Это все нужно переписать в реадкс состоянии
 
